@@ -2,8 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using PAC.Back_end.Application.Interfaces.Repositories;
 using PAC.Back_end.Application.Interfaces.Services;
 using PAC.Back_end.Application.Services;
-using PAC.Back_end.Infratructure.Data;
-using PAC.Back_end.Infratructure.Repositories;
+using PAC.Back_end.Infrastructure.Data;
+using PAC.Back_end.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PAC.Back-end.Application\PAC.Back-end.Application.csproj" />
-    <ProjectReference Include="..\PAC.Back-end.Infratructure\PAC.Back-end.Infratructure.csproj" />
+    <ProjectReference Include="..\PAC.Back-end.Infrastructure\PAC.Back-end.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

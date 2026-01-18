@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PAC.Back_end.Application.Interfaces.Repositories;
 using PAC.Back_end.Domain.Entities;
-using PAC.Back_end.Infratructure.Data;
+using PAC.Back_end.Infrastructure.Data;
 
-namespace PAC.Back_end.Infratructure.Repositories;
+namespace PAC.Back_end.Infrastructure.Repositories;
 
 public class ProductRepository : IProductRepository
 {

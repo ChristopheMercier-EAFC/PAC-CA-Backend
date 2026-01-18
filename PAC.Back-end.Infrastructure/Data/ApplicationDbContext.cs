@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PAC.Back_end.Domain.Entities;
 
-namespace PAC.Back_end.Infratructure.Data;
+namespace PAC.Back_end.Infrastructure.Data;
 
 public class ApplicationDbContext : DbContext
 {
