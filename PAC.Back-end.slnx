@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PAC.Back-end.API/PAC.Back-end.API.csproj" />
+  <Project Path="PAC.Back-end.Application/PAC.Back-end.Application.csproj" />
+  <Project Path="PAC.Back-end.Domain/PAC.Back-end.Domain.csproj" />
+  <Project Path="PAC.Back-end.Infratructure/PAC.Back-end.Infratructure.csproj" />
+</Solution>
