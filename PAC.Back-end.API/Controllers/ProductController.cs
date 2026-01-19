@@ -13,31 +13,36 @@ public class ProductController : ControllerBase
     {
         _service = service;
     }
+
     [HttpGet]
-    public async Task<IEnumerable<ProductDTO>> Get()
+    public async Task<IActionResult> GetAsync()
     {
-        return await _service.GetAllProductsAsync();
+        return Ok(await _service.GetAllProductsAsync());
     }
+
     [HttpGet("{id}")]
-    public async Task<ActionResult<ProductDTO>> Get(int id)
+    public async Task<ActionResult<ProductDTO>> GetAsync(int id)
     {
         var product = await _service.GetProductByIdAsync(id);
         if (product == null)
             return NotFound();
         return Ok(product);
     }
+
     [HttpPost]
     public async Task<IActionResult> Post(CreateProductDTO productDto)
     {
         var product = await _service.AddProductAsync(productDto);
         return Ok(product);
     }
+
     [HttpPut("{id}")]
     public async Task<IActionResult> Put(UpdateProductDTO productDto)
     {
         await _service.UpdateProductAsync(productDto);
         return NoContent();
     }
+
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
